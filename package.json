@@ -1,0 +1,36 @@
+{
+  "name": "ideafoundersserver",
+  "version": "1.0.0",
+  "description": "Server for a Idea Sharing Platform known as Idea Founders.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev2": "nodemon -r dotenv/config src/index.js",
+    "dev": "nodemon --watch src -e ts --exec ts-node -r dotenv/config src/index.ts",
+    "build": "tsc"
+  },
+  "author": "Aditya Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.3",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.1",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "logger": "^0.0.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/logger": "^0.0.5",
+    "@types/node": "^22.9.0",
+    "drizzle-kit": "^0.28.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
